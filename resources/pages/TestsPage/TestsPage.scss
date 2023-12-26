@@ -1,0 +1,54 @@
+.tests-main{
+    .main-body{
+        padding-top:56px;
+        text-align: center;
+
+        .body-title{
+            text-align: center;
+            font-size: 34px;
+            font-weight: 500;
+            margin-bottom: 56px;
+        }
+
+        input{
+            border: 2px solid #000;
+            width: 100%;
+            padding:20px 46px;
+            padding-right: 0;
+            background-color: #ECECEC;
+            color: #757575;
+            border-radius: 20px;
+            font-size: 16px;
+            width: 534px;
+            margin-bottom: 43px;
+        }
+    }
+}
+.tests{
+    margin: 0 auto;
+    max-width: 1214px;
+    height: 60vh;
+    border:6px solid #717171;
+    border-radius: 10px;
+    overflow: auto;
+
+    .list-tests{
+        padding:25px 27px 25px 48px;
+        a{
+            background: #FFD94E url('../../../public/images/ellipse.svg') 38px center no-repeat;
+            display: inline-block;
+            padding: 17px 0;
+            padding-right: 0; 
+            text-align: center;
+            width: 100%;
+            border-radius: 15px;
+            font-size: 20px;
+        }
+        li{
+            margin-bottom: 18px;
+        }
+        li:last-child{
+            margin-bottom: 0;
+        }
+    }
+}

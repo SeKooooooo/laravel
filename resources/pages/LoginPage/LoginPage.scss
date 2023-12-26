@@ -1,0 +1,48 @@
+.login-main{
+    .main-body{
+        padding-top:80px;
+        .body-title{
+            text-align: center;
+            font-size: 34px;
+            font-weight: 600;
+            margin-bottom: 65px;
+        }
+        .btn-login{
+            width: 100%;
+            border-radius: 20px;
+            padding: 20px 0;
+            font-size: 26px;
+            font-weight: 500;
+            background-color: #FFC801;
+            border:1px solid #FFC801;
+            margin-top: 28px;
+        }
+    }
+}
+.column-input{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 388px;
+    margin: 0 auto 164px auto;
+
+    .input{
+        width: 100%;
+        border:2px solid #585858;
+        border-radius: 20px;
+        padding: 25px 0 25px 27px;
+        font-family: 'Montserrat', sans-serif;
+        margin-bottom: 26px;
+        font-size: 16px;
+        &-last{
+            margin-bottom: 0;
+        }
+    }
+    .no-pass{
+        font-size: 14px;
+        color:#655F4B;
+        text-decoration: underline;
+        align-self: flex-end;
+        margin-right: 15px;
+    }
+}

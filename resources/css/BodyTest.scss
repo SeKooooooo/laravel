@@ -1,0 +1,99 @@
+.container-main__test{
+    color:#000;
+    height: 79vh;
+}
+
+.task{
+    margin: 60px auto 0 auto;
+    width: 920px;
+    height: 500px;
+    background-color: #FFD7463D;
+    border:2px solid #363222;
+    border-radius: 5px;
+    padding: 38px 47px 58px 47px;
+    margin-bottom: 20px;
+
+    .task-question{
+        margin-bottom: 20px;
+        background-color: #FFF9E3;
+        font-size: 25px;
+        height: 60%;
+    }
+
+    .list-answer{
+        display: flex;
+        flex-wrap: wrap;
+        column-gap: 46px;
+        row-gap: 20px;
+        .answer{
+            display: block;
+            background-color: #69C3BE;
+            width: 380px;
+            padding: 10px 0 10px 15px;
+            border-radius: 5px;
+            color:#FFF;
+            cursor: pointer;
+
+            input[type="radio"]{
+                position: absolute;
+                width: 1px;
+                height: 1px;
+                opacity: 0;
+            }
+            span{
+                position: relative;
+                display: flex;
+                align-items: center;
+            }
+            span::before{
+                content: "";
+                width: 20px;
+                height: 20px;
+                border:1px solid #fff;
+                display: inline-block;
+                border-radius:30%;
+                margin-right: 9px;
+                background: #fff;
+            }
+            span::after{
+                content: "";
+                position: absolute;
+                width: 19px;
+                height: 17px;
+                left:0;
+                background: url('../image/check_mark.svg');
+                opacity: 0;
+            }
+
+            input[type="radio"]:checked + span::after{
+                opacity: 1;
+            }
+        }
+    }
+}
+.tasks{
+    height: 60px;
+    background-color: #00000054;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .list-tasks{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap:10px;
+    }    
+    .tasks-item{
+        background-color: #FFD94E;
+        border: 1px solid #FFA800;
+        border-radius: 5px;
+        color:#754600;
+        width:50px;
+        height: 50px;
+    }
+    .active{
+        background-color: #FFA800;
+    }
+}
+
